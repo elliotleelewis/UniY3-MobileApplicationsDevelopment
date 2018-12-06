@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Assignment - IOT Client - App</string>
+	<string name="app_name_short">IOT Client</string>
+	<string name="channel_name">IOT Client</string>
+	<string name="channel_description">Assignment - IOT Client - App</string>
+	<string name="notification_unauthorized_access_title">Unauthorized Access Attempted</string>
+	<string name="notification_unauthorized_access_text">Attempted by RFIDTag: "%1$s" at Door: %2$d</string>
+	<string name="toast_invalid_input">Invalid RFIDTag or Door ID</string>
+	<string name="toast_unable_logs">Unable to retrieve logs</string>
+	<string name="menu_refresh">Refresh</string>
+	<string name="activate_door">Activate Door</string>
+	<string name="open_door">Open Door</string>
+	<string name="close_door">Close Door</string>
+	<string name="tag_label">RFID Tag</string>
+	<string name="door_label">Door ID</string>
+</resources>
