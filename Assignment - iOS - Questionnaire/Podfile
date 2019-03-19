@@ -1,0 +1,8 @@
+platform :ios, '12.0'
+
+target 'Assignment - iOS - Questionnaire' do
+  use_frameworks!
+
+  # Pods for Assignment - iOS - Questionnaire
+  pod 'SwiftLint'
+end

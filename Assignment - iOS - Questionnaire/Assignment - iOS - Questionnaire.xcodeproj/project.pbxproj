@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3620E7C6223E8D9E00DB387A /* AdminDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3620E7C5223E8D9E00DB387A /* AdminDetailViewController.swift */; };
+		3620E7CB223E8F5600DB387A /* ResponseSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3620E7CA223E8F5600DB387A /* ResponseSelectionDelegate.swift */; };
+		3620E7CD22402F4000DB387A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620E7CC22402F4000DB387A /* LocalAuthentication.framework */; };
+		3620E7CF22411BF900DB387A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620E7CE22411BF900DB387A /* CoreLocation.framework */; };
+		3620E7D122411C0200DB387A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620E7D022411C0200DB387A /* CoreData.framework */; };
+		3626325E222DFFCF00BC9387 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3626325D222DFFCF00BC9387 /* FinishViewController.swift */; };
+		362DCF27222CB12A00CEA3F5 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DCF26222CB12A00CEA3F5 /* QuestionViewController.swift */; };
+		362DCF2A222CB64500CEA3F5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DCF29222CB64500CEA3F5 /* Question.swift */; };
+		362DCF2C222CB6EB00CEA3F5 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DCF2B222CB6EB00CEA3F5 /* Answer.swift */; };
+		362DCF2E222CBD5100CEA3F5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DCF2D222CBD5100CEA3F5 /* Result.swift */; };
+		36301E81222846C800BEA476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36301E80222846C800BEA476 /* AppDelegate.swift */; };
+		36301E83222846C800BEA476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36301E82222846C800BEA476 /* ViewController.swift */; };
+		36301E86222846C800BEA476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36301E84222846C800BEA476 /* Main.storyboard */; };
+		36301E89222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36301E87222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodeld */; };
+		36301E8B222846C900BEA476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36301E8A222846C900BEA476 /* Assets.xcassets */; };
+		36301E8E222846C900BEA476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36301E8C222846C900BEA476 /* LaunchScreen.storyboard */; };
+		36ADB5A02236C7650086DD47 /* AdminSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ADB59F2236C7650086DD47 /* AdminSplitViewController.swift */; };
+		36FDFD68223803F800577292 /* AdminMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FDFD67223803F800577292 /* AdminMasterViewController.swift */; };
+		D5FAF73F505769E2FCB32295 /* Pods_Assignment___iOS___Questionnaire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12B83A33ED07AF58A43B36A /* Pods_Assignment___iOS___Questionnaire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A3DA6423166A267658BCC2D /* Pods-Assignment - iOS - Questionnaire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment - iOS - Questionnaire.release.xcconfig"; path = "Target Support Files/Pods-Assignment - iOS - Questionnaire/Pods-Assignment - iOS - Questionnaire.release.xcconfig"; sourceTree = "<group>"; };
+		3620E7C5223E8D9E00DB387A /* AdminDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDetailViewController.swift; sourceTree = "<group>"; };
+		3620E7CA223E8F5600DB387A /* ResponseSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSelectionDelegate.swift; sourceTree = "<group>"; };
+		3620E7CC22402F4000DB387A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		3620E7CE22411BF900DB387A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3620E7D022411C0200DB387A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3626325D222DFFCF00BC9387 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		362DCF26222CB12A00CEA3F5 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		362DCF29222CB64500CEA3F5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		362DCF2B222CB6EB00CEA3F5 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		362DCF2D222CBD5100CEA3F5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		36301E7D222846C800BEA476 /* Assignment - iOS - Questionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment - iOS - Questionnaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36301E80222846C800BEA476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36301E82222846C800BEA476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36301E85222846C800BEA476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36301E88222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Assignment___iOS___Questionnaire.xcdatamodel"; sourceTree = "<group>"; };
+		36301E8A222846C900BEA476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36301E8D222846C900BEA476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36301E8F222846C900BEA476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36ADB59F2236C7650086DD47 /* AdminSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSplitViewController.swift; sourceTree = "<group>"; };
+		36FDFD67223803F800577292 /* AdminMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMasterViewController.swift; sourceTree = "<group>"; };
+		E12B83A33ED07AF58A43B36A /* Pods_Assignment___iOS___Questionnaire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Assignment___iOS___Questionnaire.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF13EC0DA67B5893FE20A410 /* Pods-Assignment - iOS - Questionnaire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment - iOS - Questionnaire.debug.xcconfig"; path = "Target Support Files/Pods-Assignment - iOS - Questionnaire/Pods-Assignment - iOS - Questionnaire.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36301E7A222846C800BEA476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3620E7D122411C0200DB387A /* CoreData.framework in Frameworks */,
+				3620E7CF22411BF900DB387A /* CoreLocation.framework in Frameworks */,
+				3620E7CD22402F4000DB387A /* LocalAuthentication.framework in Frameworks */,
+				D5FAF73F505769E2FCB32295 /* Pods_Assignment___iOS___Questionnaire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3620E7C7223E8EB400DB387A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3620E7CA223E8F5600DB387A /* ResponseSelectionDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		362DCF28222CB53000CEA3F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				362DCF29222CB64500CEA3F5 /* Question.swift */,
+				362DCF2B222CB6EB00CEA3F5 /* Answer.swift */,
+				362DCF2D222CBD5100CEA3F5 /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36301E74222846C800BEA476 = {
+			isa = PBXGroup;
+			children = (
+				36301E7F222846C800BEA476 /* Assignment - iOS - Questionnaire */,
+				36301E7E222846C800BEA476 /* Products */,
+				86EFEA4C6BA00146C5451770 /* Pods */,
+				682EE186F12607AA2C7D2E57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36301E7E222846C800BEA476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36301E7D222846C800BEA476 /* Assignment - iOS - Questionnaire.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36301E7F222846C800BEA476 /* Assignment - iOS - Questionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				36301E96222861B800BEA476 /* Controllers */,
+				362DCF28222CB53000CEA3F5 /* Models */,
+				3620E7C7223E8EB400DB387A /* Delegates */,
+				36301E97222861FD00BEA476 /* SupportFiles */,
+			);
+			path = "Assignment - iOS - Questionnaire";
+			sourceTree = "<group>";
+		};
+		36301E96222861B800BEA476 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36301E82222846C800BEA476 /* ViewController.swift */,
+				362DCF26222CB12A00CEA3F5 /* QuestionViewController.swift */,
+				3626325D222DFFCF00BC9387 /* FinishViewController.swift */,
+				36ADB59F2236C7650086DD47 /* AdminSplitViewController.swift */,
+				36FDFD67223803F800577292 /* AdminMasterViewController.swift */,
+				3620E7C5223E8D9E00DB387A /* AdminDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		36301E97222861FD00BEA476 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				36301E80222846C800BEA476 /* AppDelegate.swift */,
+				36301E84222846C800BEA476 /* Main.storyboard */,
+				36301E8A222846C900BEA476 /* Assets.xcassets */,
+				36301E8C222846C900BEA476 /* LaunchScreen.storyboard */,
+				36301E8F222846C900BEA476 /* Info.plist */,
+				36301E87222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodeld */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		682EE186F12607AA2C7D2E57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3620E7D022411C0200DB387A /* CoreData.framework */,
+				3620E7CE22411BF900DB387A /* CoreLocation.framework */,
+				3620E7CC22402F4000DB387A /* LocalAuthentication.framework */,
+				E12B83A33ED07AF58A43B36A /* Pods_Assignment___iOS___Questionnaire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86EFEA4C6BA00146C5451770 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF13EC0DA67B5893FE20A410 /* Pods-Assignment - iOS - Questionnaire.debug.xcconfig */,
+				0A3DA6423166A267658BCC2D /* Pods-Assignment - iOS - Questionnaire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36301E7C222846C800BEA476 /* Assignment - iOS - Questionnaire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36301E92222846C900BEA476 /* Build configuration list for PBXNativeTarget "Assignment - iOS - Questionnaire" */;
+			buildPhases = (
+				F5FE8FE3AE0F22837E39B5E1 /* [CP] Check Pods Manifest.lock */,
+				36301E79222846C800BEA476 /* Sources */,
+				36301E7A222846C800BEA476 /* Frameworks */,
+				36301E7B222846C800BEA476 /* Resources */,
+				36301E952228485F00BEA476 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment - iOS - Questionnaire";
+			productName = "Assignment - iOS - Questionnaire";
+			productReference = 36301E7D222846C800BEA476 /* Assignment - iOS - Questionnaire.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36301E75222846C800BEA476 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Elliot Lewis";
+				TargetAttributes = {
+					36301E7C222846C800BEA476 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 36301E78222846C800BEA476 /* Build configuration list for PBXProject "Assignment - iOS - Questionnaire" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36301E74222846C800BEA476;
+			productRefGroup = 36301E7E222846C800BEA476 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36301E7C222846C800BEA476 /* Assignment - iOS - Questionnaire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36301E7B222846C800BEA476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36301E8E222846C900BEA476 /* LaunchScreen.storyboard in Resources */,
+				36301E8B222846C900BEA476 /* Assets.xcassets in Resources */,
+				36301E86222846C800BEA476 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36301E952228485F00BEA476 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		F5FE8FE3AE0F22837E39B5E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Assignment - iOS - Questionnaire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36301E79222846C800BEA476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362DCF2A222CB64500CEA3F5 /* Question.swift in Sources */,
+				36301E83222846C800BEA476 /* ViewController.swift in Sources */,
+				362DCF27222CB12A00CEA3F5 /* QuestionViewController.swift in Sources */,
+				3620E7CB223E8F5600DB387A /* ResponseSelectionDelegate.swift in Sources */,
+				36FDFD68223803F800577292 /* AdminMasterViewController.swift in Sources */,
+				362DCF2C222CB6EB00CEA3F5 /* Answer.swift in Sources */,
+				362DCF2E222CBD5100CEA3F5 /* Result.swift in Sources */,
+				3626325E222DFFCF00BC9387 /* FinishViewController.swift in Sources */,
+				36301E81222846C800BEA476 /* AppDelegate.swift in Sources */,
+				36301E89222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodeld in Sources */,
+				36ADB5A02236C7650086DD47 /* AdminSplitViewController.swift in Sources */,
+				3620E7C6223E8D9E00DB387A /* AdminDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		36301E84222846C800BEA476 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36301E85222846C800BEA476 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36301E8C222846C900BEA476 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36301E8D222846C900BEA476 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36301E90222846C900BEA476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36301E91222846C900BEA476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36301E93222846C900BEA476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF13EC0DA67B5893FE20A410 /* Pods-Assignment - iOS - Questionnaire.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Assignment - iOS - Questionnaire/SupportFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.elliotlewis.assignment-questionnaire";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36301E94222846C900BEA476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3DA6423166A267658BCC2D /* Pods-Assignment - iOS - Questionnaire.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Assignment - iOS - Questionnaire/SupportFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.elliotlewis.assignment-questionnaire";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36301E78222846C800BEA476 /* Build configuration list for PBXProject "Assignment - iOS - Questionnaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36301E90222846C900BEA476 /* Debug */,
+				36301E91222846C900BEA476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36301E92222846C900BEA476 /* Build configuration list for PBXNativeTarget "Assignment - iOS - Questionnaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36301E93222846C900BEA476 /* Debug */,
+				36301E94222846C900BEA476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		36301E87222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				36301E88222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodel */,
+			);
+			currentVersion = 36301E88222846C800BEA476 /* Assignment___iOS___Questionnaire.xcdatamodel */;
+			path = "Assignment___iOS___Questionnaire.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 36301E75222846C800BEA476 /* Project object */;
+}
