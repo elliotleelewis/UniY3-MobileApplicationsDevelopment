@@ -1,0 +1,8 @@
+platform :ios, '12.0'
+
+target 'Assignment - iOS - Photo Album' do
+  use_frameworks!
+
+  # Pods for Assignment - iOS - Photo Album
+  pod 'SwiftLint'
+end
