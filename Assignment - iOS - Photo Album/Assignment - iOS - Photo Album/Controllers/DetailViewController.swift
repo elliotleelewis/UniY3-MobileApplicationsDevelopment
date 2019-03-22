@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+/// UIViewController for the Detail Screen on `Main.storyboard`
 class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var prediction: UILabel!
@@ -19,6 +20,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Set the data in the UI to be that of the image object.
         self.imageView.image = UIImage(data: (image?.image)!)
         self.prediction.text = image?.prediction
         self.predictionConfidence.text = image?.predictionConfidence.description

@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Custom UICollectionViewCell that allows for control over the UIImageView contained within
 class ImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
 }
