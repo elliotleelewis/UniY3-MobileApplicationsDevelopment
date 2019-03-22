@@ -8,18 +8,12 @@
 
 import UIKit
 
+/// UIViewController for the Home Screen on `Main.storyboard`
 class ViewController: UIViewController {
     @IBOutlet weak var userId: UITextField!
     @IBOutlet weak var dateOfBirth: UIDatePicker!
 
-    @IBAction func unwind(segue: UIStoryboardSegue) {
-        //
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    // MARK: - Override Functions
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -32,4 +26,12 @@ class ViewController: UIViewController {
             controller?.dateOfBirth = dateOfBirth.date
         }
     }
+
+    // MARK: - Actions
+
+    /// Unwind function for making a segue back to this UIViewController.
+    ///
+    /// - parameters:
+    ///   - segue: Segue that is unwinding.
+    @IBAction func unwind(segue: UIStoryboardSegue) {}
 }

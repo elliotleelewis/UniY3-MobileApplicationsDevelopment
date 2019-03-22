@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Result model
 class Result {
     var question: String
     var answer: String

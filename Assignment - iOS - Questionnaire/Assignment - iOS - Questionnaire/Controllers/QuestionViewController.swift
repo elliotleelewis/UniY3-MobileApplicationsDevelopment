@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// UIViewController for the Question Screen on `Main.storyboard`
 class QuestionViewController: UIViewController {
     @IBOutlet weak var questionTitle: UILabel!
     @IBOutlet weak var question: UILabel!
@@ -44,18 +45,7 @@ class QuestionViewController: UIViewController {
     ]
     var results: [Result] = []
 
-    @IBAction func answerQuestion(sender: UIButton) {
-        let question = self.questions[self.currentQuestion]
-        let answer = question.answers[sender.tag]
-        results.append(Result(question: question.question, answer: answer.answer))
-        if answer.nextQuestion == -1 {
-            self.completeQuestionnaire()
-        } else {
-            self.currentQuestion = answer.nextQuestion
-            self.questionCount += 1
-            self.updateView()
-        }
-    }
+    // MARK: - Override Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +63,28 @@ class QuestionViewController: UIViewController {
         }
     }
 
+    // MARK: - Actions
+
+    /// Action that is run whenever a question is answered. If there are any more questions to be displayed, then
+    /// display them, otherwise perform a segue to FinishViewController.
+    ///
+    /// - parameters:
+    ///   - sender: Button that called this action.
+    @IBAction func answerQuestion(sender: UIButton) {
+        let question = self.questions[self.currentQuestion]
+        let answer = question.answers[sender.tag]
+        results.append(Result(question: question.question, answer: answer.answer))
+        if answer.nextQuestion == -1 {
+            self.performSegue(withIdentifier: "complete", sender: self)
+        } else {
+            self.currentQuestion = answer.nextQuestion
+            self.questionCount += 1
+            self.updateView()
+        }
+    }
+
+    // MARK: - ViewController Functions
+
     func updateView() {
         self.questionTitle.text = "Question " + self.questionCount.description
         self.question.text = self.questions[currentQuestion].question
@@ -88,9 +100,5 @@ class QuestionViewController: UIViewController {
             button.titleLabel?.textAlignment = .center
             self.answers.addArrangedSubview(button)
         }
-    }
-
-    func completeQuestionnaire() {
-        self.performSegue(withIdentifier: "complete", sender: self)
     }
 }

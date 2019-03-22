@@ -9,7 +9,9 @@
 import UIKit
 import LocalAuthentication
 
+/// UISplitViewController for the Admin Split Screen on `Main.storyboard`
 class AdminSplitViewController: UISplitViewController, UISplitViewControllerDelegate {
+    // MARK: - Override Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +22,16 @@ class AdminSplitViewController: UISplitViewController, UISplitViewControllerDele
     override func viewDidAppear(_ animated: Bool) {
         let authContext = LAContext()
         var authError: NSError?
+
         let alert = UIAlertController(
             title: "Error",
             message: "You're not allowed to view this.",
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
         if authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+            // If device has biometric security, authenticate using it
             authContext.evaluatePolicy(
                 .deviceOwnerAuthenticationWithBiometrics,
                 localizedReason: "Authenticate for access to Admin content."
@@ -39,6 +44,7 @@ class AdminSplitViewController: UISplitViewController, UISplitViewControllerDele
                 }
             }
         } else if authContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: &authError) {
+            // If device doesn't have biometric security, but does have security, authenticate using it
             authContext.evaluatePolicy(
                 .deviceOwnerAuthentication,
                 localizedReason: "Authenticate for access to Admin content."
@@ -61,9 +67,9 @@ class AdminSplitViewController: UISplitViewController, UISplitViewControllerDele
     func splitViewController(
         _ splitViewController: UISplitViewController,
         collapseSecondary secondaryViewController: UIViewController,
-        onto primaryViewController: UIViewController) -> Bool {
+        onto primaryViewController: UIViewController
+        ) -> Bool {
         // Return true to prevent UIKit from applying its default behavior
         return true
     }
-
 }

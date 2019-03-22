@@ -9,11 +9,13 @@
 import UIKit
 import CoreData
 
+/// UITableViewController for the Admin Master Screen on `Main.storyboard`
 class AdminMasterViewController: UITableViewController {
-
     weak var delegate: ResponseSelectionDelegate?
 
     var responses: [Response] = []
+
+    // MARK: - Override Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,18 @@ class AdminMasterViewController: UITableViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        loadResponses()
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let responseFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Response")
+        responseFetchRequest.returnsObjectsAsFaults = false
+
+        do {
+            guard let responses = try managedContext.fetch(responseFetchRequest) as? [Response] else { return }
+            self.responses = responses
+            self.tableView.reloadData()
+        } catch {
+            print("Failed!")
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,20 +54,4 @@ class AdminMasterViewController: UITableViewController {
         let response = self.responses[indexPath.row]
         delegate?.responseSelected(response)
     }
-
-    func loadResponses() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let responseFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Response")
-        responseFetchRequest.returnsObjectsAsFaults = false
-
-        do {
-            guard let responses = try managedContext.fetch(responseFetchRequest) as? [Response] else { return }
-            self.responses = responses
-            self.tableView.reloadData()
-        } catch {
-            print("Failed!")
-        }
-    }
-
 }

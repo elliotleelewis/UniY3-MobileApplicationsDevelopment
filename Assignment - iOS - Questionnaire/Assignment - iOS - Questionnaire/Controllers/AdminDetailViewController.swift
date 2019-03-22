@@ -9,18 +9,25 @@
 import UIKit
 import MapKit
 
+/// UIViewController for the Admin Detail Screen on `Main.storyboard`
 class AdminDetailViewController: UIViewController, ResponseSelectionDelegate {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var map: MKMapView!
 
     var response: Response?
 
+    // MARK: - ViewController Functions
+
     func responseSelected(_ response: Response) {
         self.response = response
+
+        // Clear old subviews/map annotations
         self.stackView.subviews
             .filter({ !($0 is MKMapView) })
             .forEach({ $0.removeFromSuperview() })
         self.map.removeAnnotations(self.map.annotations)
+
+        // Generate new question/answer subviews
         for case let (index, answer as ResponseAnswer) in self.response!.answers!.enumerated() {
             let questionLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.stackView.frame.width, height: 24))
             questionLabel.text = answer.question
@@ -36,6 +43,8 @@ class AdminDetailViewController: UIViewController, ResponseSelectionDelegate {
             self.stackView.insertArrangedSubview(questionLabel, at: index * 2)
             self.stackView.insertArrangedSubview(answerLabel, at: (index * 2) + 1)
         }
+
+        // Add marker to the map showing location of response
         let coordinates = CLLocationCoordinate2D(
             latitude: (self.response?.latitude)!,
             longitude: (self.response?.longitude)!

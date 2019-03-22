@@ -8,6 +8,11 @@
 
 import Foundation
 
+/// Delegate for handling selected response actions in AdminSplitViewController
 protocol ResponseSelectionDelegate: class {
+    /// Selected response action
+    ///
+    /// - parameters:
+    ///   - response: Response object that was selected
     func responseSelected(_ response: Response)
 }
